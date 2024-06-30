@@ -1,0 +1,42 @@
+type Query {
+  info: String!
+  feed: [Link]!
+}
+
+type Link {
+  id: ID!
+  description: String!
+  url: String!
+}
+
+type AuthPayload {
+  token: String
+  user: User
+  message: String!
+}
+
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  links: [Link!]
+}
+
+type Err {
+  errMsg: String!
+}
+
+union LinkOrErr = Link | Err
+
+type Mutation {
+  post(url: String!, description: String!): LinkOrErr! #Link!
+  signup(email: String!, password: String!, name: String!): AuthPayload!
+  login(email: String!, password: String!): AuthPayload!
+}
+
+type Subscription {
+  # args can be passed
+  # newLink: Link
+  newLink(id: String): Link
+  newLink2(id: String): Link
+}
