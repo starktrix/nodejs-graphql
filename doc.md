@@ -1,10 +1,13 @@
-https://www.howtographql.com
-https://graphql.org/learn/
-https://www.apollographql.com/docs/apollo-server/schema/unions-interfaces
+[Tutorial](https://www.howtographql.com)
+
+[graphql](https://graphql.org/learn/)
+
+[apollo](https://www.apollographql.com/docs/apollo-server/schema/unions-interfaces)
 
 
-https://www.prisma.io/blog/graphql-server-basics-the-schema-ac5e2950214e
-https://www.prisma.io/blog/graphql-server-basics-the-network-layer-51d97d21861
+[graphql-schema](https://www.prisma.io/blog/graphql-server-basics-the-schema-ac5e2950214e)
+
+[graphql-network layer](https://www.prisma.io/blog/graphql-server-basics-the-network-layer-51d97d21861)
 
 
 errors for accessing a field set a compulsory but not included
@@ -143,7 +146,7 @@ type Mutation {
 
 
 #### Subscriptions
-https://www.apollographql.com/docs/apollo-server/v3/data/subscriptions
+[apollo-subscription](https://www.apollographql.com/docs/apollo-server/v3/data/subscriptions)
 
 - They are implemented over websocket
 
